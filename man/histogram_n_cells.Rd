@@ -7,6 +7,9 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 histogram_n_cells(so)
 }
+\arguments{
+  \item{so}{Argument accepted by \code{histogram_n_cells}.}
+}
 \value{
 An R object returned by the helper.
 }

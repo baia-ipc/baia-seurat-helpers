@@ -7,6 +7,10 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 qc_distri_plot(so, measure)
 }
+\arguments{
+  \item{so}{Argument accepted by \code{qc_distri_plot}.}
+  \item{measure}{Argument accepted by \code{qc_distri_plot}.}
+}
 \value{
 An R object returned by the helper.
 }

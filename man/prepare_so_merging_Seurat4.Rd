@@ -7,6 +7,10 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 prepare_so_merging_Seurat4(so, verbose)
 }
+\arguments{
+  \item{so}{Argument accepted by \code{prepare_so_merging_Seurat4}.}
+  \item{verbose}{Argument accepted by \code{prepare_so_merging_Seurat4}.}
+}
 \value{
 An R object returned by the helper.
 }

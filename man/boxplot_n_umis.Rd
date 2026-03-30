@@ -7,6 +7,9 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 boxplot_n_umis(so)
 }
+\arguments{
+  \item{so}{Argument accepted by \code{boxplot_n_umis}.}
+}
 \value{
 An R object returned by the helper.
 }

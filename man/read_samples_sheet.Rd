@@ -7,6 +7,11 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 read_samples_sheet(filename, column, verbose)
 }
+\arguments{
+  \item{filename}{Argument accepted by \code{read_samples_sheet}.}
+  \item{column}{Argument accepted by \code{read_samples_sheet}.}
+  \item{verbose}{Argument accepted by \code{read_samples_sheet}.}
+}
 \value{
 An R object returned by the helper.
 }

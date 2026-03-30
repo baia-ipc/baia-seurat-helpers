@@ -7,6 +7,10 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 compute_percent_mito(so, mitoGenes)
 }
+\arguments{
+  \item{so}{Argument accepted by \code{compute_percent_mito}.}
+  \item{mitoGenes}{Argument accepted by \code{compute_percent_mito}.}
+}
 \value{
 An R object returned by the helper.
 }

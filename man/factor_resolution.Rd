@@ -7,6 +7,9 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 factor_resolution(so)
 }
+\arguments{
+  \item{so}{Argument accepted by \code{factor_resolution}.}
+}
 \value{
 An R object returned by the helper.
 }

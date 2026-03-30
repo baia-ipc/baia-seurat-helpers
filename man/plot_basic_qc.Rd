@@ -7,6 +7,12 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 plot_basic_qc(so, title, colors, alpha)
 }
+\arguments{
+  \item{so}{Argument accepted by \code{plot_basic_qc}.}
+  \item{title}{Argument accepted by \code{plot_basic_qc}.}
+  \item{colors}{Argument accepted by \code{plot_basic_qc}.}
+  \item{alpha}{Argument accepted by \code{plot_basic_qc}.}
+}
 \value{
 An R object returned by the helper.
 }

@@ -7,6 +7,9 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 boxplot_n_genes(so)
 }
+\arguments{
+  \item{so}{Argument accepted by \code{boxplot_n_genes}.}
+}
 \value{
 An R object returned by the helper.
 }

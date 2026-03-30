@@ -7,6 +7,9 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 split_print_legend(plt)
 }
+\arguments{
+  \item{plt}{Argument accepted by \code{split_print_legend}.}
+}
 \value{
 An R object returned by the helper.
 }

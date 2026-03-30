@@ -7,6 +7,9 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 scater_qc(so)
 }
+\arguments{
+  \item{so}{Argument accepted by \code{scater_qc}.}
+}
 \value{
 An R object returned by the helper.
 }

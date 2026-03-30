@@ -7,6 +7,9 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 so_version(so)
 }
+\arguments{
+  \item{so}{Argument accepted by \code{so_version}.}
+}
 \value{
 An R object returned by the helper.
 }

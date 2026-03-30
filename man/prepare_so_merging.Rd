@@ -7,6 +7,9 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 prepare_so_merging(so)
 }
+\arguments{
+  \item{so}{Argument accepted by \code{prepare_so_merging}.}
+}
 \value{
 An R object returned by the helper.
 }

@@ -11,24 +11,24 @@
 #' the header, containing column names and optionally starting with
 #' a '#' (without any spaces following it).
 #'
-#' @param samples_sheet String. Path to the TSV file
+#' @param filename String. Path to the TSV file
 #' @param column String. Column containing the sample IDs
 #' @param verbose Boolean. Whether to print the sample sheet and the IDs.
 #'
 #' @return data.frame. The sample sheet.
 #'
 #' @examples
-#'   samples_sheet <- read_samples_sheet("~/project/samples.tsv", "PatientID")
+#'   samples_metadata <- read_samples_sheet("~/project/samples.tsv", "PatientID")
 #'
 read_samples_sheet <- function(filename, column="SampleID", verbose=TRUE) {
-  header <- read.table(samples_sheet, sep="\t", header=FALSE,  nrows=1,
+  header <- read.table(filename, sep="\t", header=FALSE,  nrows=1,
                        stringsAsFactors=FALSE, comment.char="")
   header <- gsub("^#", "", unlist(header))
-  samples_metadata <- read.table(samples_sheet, sep="\t", col.names = header,
+  samples_metadata <- read.table(filename, sep="\t", col.names = header,
                                  header=FALSE, skip=1, comment.char="",
                                  colClasses = setNames("character", column))
   if (verbose) {
-    print(paste("Sample sheet:", samples_sheet))
+    print(paste("Sample sheet:", filename))
     print(samples_metadata)
   }
 

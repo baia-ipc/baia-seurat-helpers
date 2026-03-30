@@ -7,6 +7,10 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 dotplot_n_umis_genes_mito(so, plot_nrows)
 }
+\arguments{
+  \item{so}{Argument accepted by \code{dotplot_n_umis_genes_mito}.}
+  \item{plot_nrows}{Argument accepted by \code{dotplot_n_umis_genes_mito}.}
+}
 \value{
 An R object returned by the helper.
 }

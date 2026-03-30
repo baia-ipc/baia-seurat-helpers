@@ -7,6 +7,10 @@ Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq 
 \usage{
 density_plot_n_genes(so, plot_nrows)
 }
+\arguments{
+  \item{so}{Argument accepted by \code{density_plot_n_genes}.}
+  \item{plot_nrows}{Argument accepted by \code{density_plot_n_genes}.}
+}
 \value{
 An R object returned by the helper.
 }
