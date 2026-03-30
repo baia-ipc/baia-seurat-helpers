@@ -1,0 +1,29 @@
+---
+title: "baia.seurat.helpers Getting Started"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{baia.seurat.helpers Getting Started}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# baia.seurat.helpers Getting Started
+
+Provides reusable Seurat-centric quality-control, clustering, merging, sample-sheet, and plotting helpers used across BAIA scRNA-seq projects.
+
+## Install
+
+```r
+remotes::install_github('baia-ipc/baia-seurat-helpers')
+```
+
+## Load
+
+```{r, eval=FALSE}
+library(baia.seurat.helpers)
+```
+
+## Representative helpers
+
+- `read_samples_sheet('samples.tsv')`
+- `get_sample_IDs(data.frame(SampleID = c('S1', 'S2')), verbose = FALSE)`

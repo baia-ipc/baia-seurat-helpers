@@ -1,0 +1,18 @@
+---
+title: "baia.seurat.helpers Workflow"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{baia.seurat.helpers Workflow}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# baia.seurat.helpers Workflow
+
+## Representative workflow
+
+```{r, eval=FALSE}
+library(baia.seurat.helpers)
+factor_resolution(so)
+prepare_so_merging(so1, so2)
+```

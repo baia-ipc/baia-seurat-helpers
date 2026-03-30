@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "Reusable Seurat helper functions for BAIA scRNA-seq analyses"
+message: "If you use this package, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: "Gonnella"
+    given-names: "Giorgio"
+    email: "ggonnella@pasteur-kh.org"
+version: "0.1.0"
+date-released: "2026-03-30"
+license: CC-BY-SA-4.0
+repository-code: "https://github.com/baia-ipc/baia-seurat-helpers"
+abstract: "Provides reusable Seurat-centric quality-control, clustering, merging, sample-sheet, and plotting helpers used across BAIA scRNA-seq projects."
