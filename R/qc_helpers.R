@@ -132,8 +132,8 @@ plot_highest_expressed <- function(so, nfeat2plot = 50,
                                   boxplot_alpha = 0.75,
                                   ylab_txt = "counts",
                                   colors = colorRampPalette(
-                                        rev(pal_futurama("planetexpress"
-                                                         )(12)))(nfeat2plot)) {
+                                        rev(ggsci::pal_futurama("planetexpress"
+                                                                )(12)))(nfeat2plot)) {
   mat_exp <- as.matrix(so@assays$RNA$counts)
 
   # calculate sum of expression (sum of UMI)
@@ -349,4 +349,3 @@ show_qc_plots <- function(so, plot_nrows=0) {
   print(dotplot_n_umis_genes_mito(so, plot_nrows))
   print(density_plot_complexity(so, plot_nrows))
 }
-
