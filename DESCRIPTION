@@ -9,6 +9,6 @@ Encoding: UTF-8
 LazyData: false
 Roxygen: false
 Imports: Seurat, ggplot2, grid, gridExtra, RColorBrewer, reshape2, Matrix, SingleCellExperiment, scater, robustbase, withr, methods, stats, utils, grDevices
-Suggests: knitr, rmarkdown, testthat, withr, ggsci
+Suggests: knitr, rmarkdown, testthat, ggsci
 Config/testthat/edition: 3
 VignetteBuilder: knitr
