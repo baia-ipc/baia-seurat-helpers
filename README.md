@@ -65,6 +65,26 @@ workflow.
 
 ## Function Reference
 
+### New rmdreportdeck-compatible helpers
+
+The package now also includes subclustering and integrated-visualization
+helpers collected from older BAIA Rmds. These do not print report assets or
+write files as their primary behavior. Plot-return helpers instead return
+structured bundles with fields such as `plot`, `data`, `filename_stub`,
+`default_width`, and `default_height`.
+
+Representative examples:
+
+| Function | Intended purpose | Minimal example |
+| --- | --- | --- |
+| `celltype_highlight_info()` | Return highlighted cells, cluster distribution, and a DimPlot bundle for one cell type. | `celltype_highlight_info(so, "B cells", celltype_col = "celltype")` |
+| `multi_celltype_dimplot()` | Generalize the old two-, three-, four-, and five-cell-type highlight plots into one reusable helper. | `multi_celltype_dimplot(so, c("B cells", "T cells"))` |
+| `feature_dimplot()` | Return a FeaturePlot bundle with a suggested filename stub. | `feature_dimplot(so, "MS4A1")` |
+| `compare_celltype_markers()` | Compare markers between two metadata-defined cell-type groups. | `compare_celltype_markers(so, "B cells", "Plasmablasts")` |
+| `filter_variable_features_scimmune()` | Remove TCR, Ig, mito, ribosomal, and configured unwanted genes from a variable-feature set. | `filter_variable_features_scimmune(VariableFeatures(so))` |
+| `with_reduction_axes()` | Relabel a reduction plot with explicit axis labels. | `with_reduction_axes(plt, reduction_name = "UMAP Harmony")` |
+| `build_cluster_metric_violin_plot()` | Return a report-ready cluster QC violin bundle with both plot and source data. | `build_cluster_metric_violin_plot(so, "harmsnn_res.1.2", cluster_colors)` |
+
 ### Sample-sheet helpers
 
 | Function | Intended purpose | Minimal example |
