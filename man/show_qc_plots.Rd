@@ -2,18 +2,30 @@
 \alias{show_qc_plots}
 \title{show_qc_plots}
 \description{
-Reusable helper exported by Reusable Seurat helper functions for BAIA scRNA-seq analyses.
+Print the standard sequence of legacy BAIA QC plots in one call.
+}
+\details{
+Print the standard sequence of legacy BAIA QC plots in one call. It belongs to the QC plot constructors family in baia.seurat.helpers and follows the package semantics described in the package vignettes. This package is the generic Seurat helper layer for BAIA single-cell projects and should be used before moving into CITE-seq, DE, pathway, or CellChat-specific analysis.
 }
 \usage{
+
+
+
 show_qc_plots(so, plot_nrows)
 }
 \arguments{
-  \item{so}{Argument accepted by \code{show_qc_plots}.}
-  \item{plot_nrows}{Argument accepted by \code{show_qc_plots}.}
+  \item{so}{Seurat object to annotate, summarize, or plot.}
+  \item{plot_nrows}{Number of facet rows used when the plot is split by sample.}
 }
 \value{
-An R object returned by the helper.
+A plot object or rendered plot representation suitable for interactive use or saving to disk.
 }
 \examples{
-# See the package vignettes for show_qc_plots workflow examples.
+\dontrun{
+  show_qc_plots(so)
+}
+}
+\seealso{
+\code{\link{baia.seurat.helpers}}.
+Use \code{vignette("getting-started", package = "baia.seurat.helpers")} and \code{vignette("workflow", package = "baia.seurat.helpers")} for fuller workflows.
 }
