@@ -116,15 +116,6 @@ exported helper in the package.
 | `two_groups_dimplot()` | Highlight two metadata-defined groups on the same Seurat dimensionality reduction plot. | `two_groups_dimplot(so, grp1 = "DHF", grp2 = "DF", grpcol = "WHO_classification")` |
 | `split_print_legend()` | Print a ggplot without its legend and then draw the legend separately, useful for manual report layout. | `split_print_legend(plt)` |
 
-## Relationship To Other BAIA Packages
-
-- `baia.citeseq` builds on this package for generic QC helpers such as
-  `compute_percent_mito()`.
-- `baia.pseudobulk.deseq` assumes the Seurat objects have already been prepared
-  and QCed upstream.
-- `baia.ext.cellprop.plots` and `baia.cellchat` consume objects that typically
-  originate from this preprocessing layer.
-
 
 ## See Also
 
