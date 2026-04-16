@@ -349,3 +349,31 @@ show_qc_plots <- function(so, plot_nrows=0) {
   print(dotplot_n_umis_genes_mito(so, plot_nrows))
   print(density_plot_complexity(so, plot_nrows))
 }
+
+#' Count expression of genes of interest in selected cells
+#'
+#' Subsets a Seurat object to the intersection of \code{barcodes_of_interest}
+#' and \code{genes_of_interest}, then returns the raw count matrix. Useful for
+#' checking whether specific genes (e.g. viral genes) are detected in a
+#' particular cell population.
+#'
+#' @param barcodes_of_interest Character vector of cell barcodes to examine.
+#' @param genes_of_interest Character vector of gene names to examine.
+#' @param so A Seurat object.
+#'
+#' @return A numeric matrix (genes × cells), or the string
+#'   \code{"No matching barcodes or genes found"} when the intersection is
+#'   empty.
+#' @export
+get_goi_counts <- function(barcodes_of_interest, genes_of_interest, so) {
+  valid_barcodes <- barcodes_of_interest %in% colnames(so)
+  valid_genes    <- genes_of_interest    %in% rownames(so)
+  if (any(valid_barcodes) && any(valid_genes)) {
+    data_subset <- so[genes_of_interest[valid_genes],
+                      barcodes_of_interest[valid_barcodes]]
+    as.matrix(SeuratObject::GetAssayData(data_subset))
+  } else {
+    "No matching barcodes or genes found"
+  }
+}
+
