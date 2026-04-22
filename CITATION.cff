@@ -6,7 +6,7 @@ authors:
   - family-names: "Gonnella"
     given-names: "Giorgio"
     email: "ggonnella@pasteur-kh.org"
-version: "0.1.0"
+version: "0.1.1"
 date-released: "2026-03-30"
 license: CC-BY-SA-4.0
 repository-code: "https://github.com/baia-ipc/baia-seurat-helpers"

@@ -1,0 +1,10 @@
+note <- sprintf("R package version %s", meta$Version)
+
+bibentry(
+    bibtype = "Manual",
+    title = sprintf("{%s}: %s", meta$Package, meta$Title),
+    author = person(given = "Giorgio", family = "Gonnella"),
+    year = "2026",
+    note = note,
+    url = "https://github.com/baia-ipc/baia-seurat-helpers"
+)
