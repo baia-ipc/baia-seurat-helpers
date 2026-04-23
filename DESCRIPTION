@@ -1,14 +1,14 @@
 Package: baia.seurat.helpers
 Type: Package
 Title: Reusable Seurat helper functions for BAIA scRNA-seq analyses
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: person(given = "Giorgio", family = "Gonnella", role = c("aut", "cre"), email = "ggonnella@pasteur-kh.org")
 Description: Provides reusable Seurat-centric quality-control, clustering, merging, sample-sheet, and plotting helpers used across BAIA scRNA-seq projects.
 License: CC BY-SA 4.0 + file LICENSE
 Encoding: UTF-8
 LazyData: false
 Roxygen: false
-Imports: Seurat, ggplot2, grid, gridExtra, RColorBrewer, reshape2, Matrix, SingleCellExperiment, scater, robustbase, withr, methods, stats, utils, grDevices
-Suggests: knitr, rmarkdown, testthat, ggsci
+Imports: Seurat, ggplot2, grid, gridExtra, RColorBrewer, reshape2, Matrix, matrixStats, SingleCellExperiment, scater, robustbase, withr, methods, stats, utils, grDevices, ggsci
+Suggests: knitr, rmarkdown, testthat
 Config/testthat/edition: 3
 VignetteBuilder: knitr

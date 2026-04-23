@@ -52,8 +52,9 @@ test_cell_cycle_effect <- function(so, so_label, s_genes, g2m_genes,
   so <- ScaleData(so, assay = "RNA", verbose = FALSE)
 
   if (verbose) cat("\n#### Perform PCA\n")
+  npcs <- min(50, ncol(so) - 1)
   so <- RunPCA(so, assay = "RNA", reduction.name = "pcaRNA",
-               reduction.key = "pcaRNA_", verbose = FALSE)
+               reduction.key = "pcaRNA_", verbose = FALSE, npcs = npcs)
 
   if (verbose) cat("\n#### Plot the PCA colored by cell cycle phase\n")
   ccg_colors <-
