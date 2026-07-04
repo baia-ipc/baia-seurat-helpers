@@ -8,7 +8,7 @@ License: CC BY-SA 4.0 + file LICENSE
 Encoding: UTF-8
 LazyData: false
 Roxygen: false
-Imports: Seurat, ggplot2, grid, gridExtra, RColorBrewer, reshape2, Matrix, matrixStats, SingleCellExperiment, scater, robustbase, withr, methods, stats, utils, grDevices, ggsci
+Imports: Seurat, SeuratObject, ggplot2, grid, gridExtra, RColorBrewer, reshape2, Matrix, matrixStats, SingleCellExperiment, scater, robustbase, withr, methods, stats, utils, grDevices, ggsci, patchwork, scales, dplyr, tidyr
 Suggests: knitr, rmarkdown, testthat
 Config/testthat/edition: 3
 VignetteBuilder: knitr
