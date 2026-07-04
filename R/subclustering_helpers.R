@@ -257,7 +257,7 @@ filter_variable_features_scimmune <- function(
   unwanted_tcr <- grep(pattern = tcr_pattern, variable_features, value = TRUE)
   unwanted_ig <- c(
     grep(pattern = ig_pattern, variable_features, value = TRUE),
-    immunoglobulin_extra
+    unlist(lapply(immunoglobulin_extra, function(p) grep(p, variable_features, value = TRUE)))
   )
   unwanted_mt <- grep(pattern = mito_pattern, variable_features, value = TRUE)
   unwanted_ribo <- grep(pattern = ribo_pattern, variable_features, value = TRUE)
